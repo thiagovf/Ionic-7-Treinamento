@@ -3,6 +3,7 @@ sudo npm install typescript --save-dev
 npm tsc --init
 npx tsc --init
 
+## Conteúdo do arquivo tsconfig.json
 {
   "compilerOptions": {
     "target": "ES2020",
@@ -13,3 +14,8 @@ npx tsc --init
     "esModuleInterop": true
   }
 }
+
+## para executar a compilação
+npx tsc
+## para executar o arquivo compilado
+node dist/index.js
