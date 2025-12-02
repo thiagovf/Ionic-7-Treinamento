@@ -20,6 +20,12 @@ npx tsc
 ## para executar o arquivo compilado
 node dist/index.js
 
+
+# IONIC
 ## para criar o projeto ionic
 sudo ionic start projeto01 blank
 ## blank é o template vazio
+
+
+## para subir o servidor do ionic
+sudo ionic serve

@@ -7,14 +7,47 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-button>
+    Fazer Login
+  </ion-button>
+  <ion-button [disabled]="true">
+    Disabled Button
+  </ion-button>
+  <br />
+  <ion-button expand="block">
+    Block Button
+  </ion-button>
+  <ion-button expand="full">
+    Full Button
+  </ion-button>
+  <br />
+  <ion-button fill="outline">
+    Outline Button
+  </ion-button>
+  <ion-button fill="clear">
+    Clear Button
+  </ion-button>
+  <br />
+  <ion-button shape="round">
+    Round Button
+  </ion-button>
+  <br />
+  <ion-button>
+    <ion-icon name="star" slot="icon-only"></ion-icon>
+  </ion-button>
+  <ion-button shape="round">
+    <ion-icon name="star" slot="icon-only"></ion-icon>
+  </ion-button>
+
+  <br /><br />
+  <ion-button size="large">
+    <ion-icon slot="icon-only" ios="logo-apple" md="settings-sharp"></ion-icon>
+  </ion-button>
 </ion-content>
