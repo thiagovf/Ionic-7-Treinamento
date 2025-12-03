@@ -5,7 +5,7 @@ export class ClienteFisico extends Cliente {
   private _cpf?: string;
 
   public calcularDesconto(): number {
-    return 0.1; // Exemplo de implementação
+    return 15.0;
   }
 
   constructor();

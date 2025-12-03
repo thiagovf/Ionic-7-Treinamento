@@ -5,7 +5,7 @@ export class ClienteJuridico extends Cliente {
   private _cnpj?: string;
 
   public calcularDesconto(): number {
-    return 0.2; // Exemplo de implementação
+    return 20.0;
   }
 
   constructor();
