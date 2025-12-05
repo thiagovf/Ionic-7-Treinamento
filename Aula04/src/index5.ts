@@ -1,5 +1,4 @@
 import { Arquivo } from "./models/arquivo";
-import { Produto } from "./models/produto";
 
 async function execute() {
     try {
