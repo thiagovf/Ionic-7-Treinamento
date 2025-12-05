@@ -29,3 +29,11 @@ sudo ionic start projeto01 blank
 
 ## para subir o servidor do ionic
 sudo ionic serve
+
+# Pacote para entrada de dados no terminal
+sudo npm install readline-sync
+sudo npm install --save-dev @types/readline-sync
+
+# Pacote para executar arquivos TypeScript diretamente
+sudo npm install ts-node -D
+npx ts-node src/index.ts
