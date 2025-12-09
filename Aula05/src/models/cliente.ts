@@ -1,6 +1,11 @@
+import { Endereco } from "./endereco";
+import { Telefone } from "./telefone";
+
 export class Cliente {
   private _nome?: string;
   private _email?: string;
+  private _endereco?: Endereco | null;
+  private _telefones?: Telefone[];
 
   constructor();
   constructor(nome?: string, email?: string);
@@ -25,7 +30,21 @@ export class Cliente {
     this._email = email;
   }
 
+  get endereco(): Endereco | null | undefined {
+    return this._endereco;
+  }
+
+  set endereco(endereco: Endereco) {
+    this._endereco = endereco;
+  }
+  get telefones(): Telefone[] | undefined {
+    return this._telefones;
+  }
+  set telefones(telefones: Telefone[]) {
+    this._telefones = telefones;
+  }
+
   toString(): string {
-    return `Nome: ${this._nome}, Email: ${this._email}`;
+    return `${this._nome}, ${this._email}`;
   }
 }

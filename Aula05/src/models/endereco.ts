@@ -1,7 +1,10 @@
+import { Cliente } from "./cliente";
+
 export class Endereco {
   private _cidade?: string;
   private _bairro?: string;
   private _rua?: string;
+  private _cliente?: Cliente | null;
 
   constructor();
   constructor(cidade?: string, bairro?: string, rua?: string);
@@ -33,6 +36,14 @@ export class Endereco {
 
   set rua(rua: string) {
     this._rua = rua;
+  }
+
+  set cliente(cliente: Cliente) {
+    this._cliente = cliente;
+  }
+
+  get cliente(): Cliente | null | undefined {
+    return this._cliente;
   }
 
   toString(): string {
