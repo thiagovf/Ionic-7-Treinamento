@@ -1,6 +1,6 @@
 ## Instalar o typescript no projeto
 npm init -y
-sudo npm install typescript --save-dev
+npm install typescript --save-dev
 npx tsc --init
 
 ## Conteúdo do arquivo tsconfig.json
@@ -35,5 +35,5 @@ sudo npm install readline-sync
 sudo npm install --save-dev @types/readline-sync
 
 # Pacote para executar arquivos TypeScript diretamente
-sudo npm install ts-node -D
+npm install ts-node -D
 npx ts-node src/index.ts
